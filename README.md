@@ -12,12 +12,7 @@ This repository provides a Docker Compose setup for running a self-hosted [Gatus
 - **Database Backups:** Comes with a script to easily back up the PostgreSQL database.
 - **Shared Network:** Pre-configured to use a shared network for easy integration with other services.
 
-## Prerequisites
-
-- Docker and Docker Compose installed.
-- A `.env` file with the required `PSQL_PWD` environment variable.
-
-## Usage
+## Getting Started
 
 1.  **Clone the repository:**
     ```bash
@@ -26,7 +21,7 @@ This repository provides a Docker Compose setup for running a self-hosted [Gatus
     ```
 
 2.  **Create the shared network:**
-    This setup uses a shared network to easily connect to other services. If you haven't already, create the network:
+    If you haven't already, create the shared Docker network:
     ```bash
     docker network create shared_network
     ```
@@ -34,21 +29,17 @@ This repository provides a Docker Compose setup for running a self-hosted [Gatus
 3.  **Configure the environment:**
     Create a `.env` file and set the `PSQL_PWD` variable for your PostgreSQL database password.
 
-4.  **Start the application:**
+4.  **Start the service:**
     ```bash
     docker compose up -d
     ```
 
-5.  **Restart the application:**
-    ```bash
-    ./restart-docker.sh
-    ```
+## Usage
 
-6.  **Update the application:**
-    ```bash
-    ./update-docker.sh
-    ```
-    This will pull the latest Docker images and restart the services.
+-   **Start:** `docker compose up -d`
+-   **Restart:** `./restart-docker.sh`
+-   **Update:** `./update-docker.sh` (Pulls the latest Docker image and restarts the container)
+-   **Backup:** `./backup.sh` (Creates a compressed backup in the `backups` directory)
 
 ## Backup
 
@@ -80,6 +71,7 @@ Check out other self-hosted solutions:
 -   [**monitoring-self-hosted**](https://github.com/AiratTop/monitoring-self-hosted): Self-hosted monitoring stack with Prometheus and Grafana.
 -   [**ollama-self-hosted**](https://github.com/AiratTop/ollama-self-hosted): Ready-to-use solution for running Ollama with the Open WebUI on Docker.
 -   [**authentik-self-hosted**](https://github.com/AiratTop/authentik-self-hosted): Authentik is a flexible, open-source Identity & Access Management (IAM) solution.
+-   [**gatus-self-hosted**](https://github.com/AiratTop/gatus-self-hosted): Automated service health dashboard with a PostgreSQL backend and backup scripts.
 
 ## Services
 

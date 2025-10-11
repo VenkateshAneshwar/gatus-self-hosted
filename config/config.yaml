@@ -2,6 +2,16 @@ storage:
   type: postgres
   path: "postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES_HOST}/${POSTGRES_DB}?sslmode=disable"
 
+alerting:
+  telegram:
+    token: ${TELEGRAM_BOT_TOKEN}
+    id: ${TELEGRAM_USER_ID}
+
+#security:
+#  basic:
+#    username: "john.doe"
+#    password-bcrypt-base64: "JDJhJDEwJHRiMnRFakxWazZLdXBzRERQazB1TE8vckRLY05Yb1hSdnoxWU0yQ1FaYXZRSW1McmladDYu"
+
 endpoints:
   - name: back-end
     group: core

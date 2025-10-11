@@ -29,8 +29,10 @@ services:
       POSTGRES_DB: gatus
       POSTGRES_USER: gatus
       POSTGRES_PASSWORD: ${PSQL_PWD}
+      TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN}
+      TELEGRAM_USER_ID: ${TELEGRAM_USER_ID}
     volumes:
-      - ./config:/config:ro
+      - ./config/config.yaml:/config/config.yaml:ro
       - ./data/gatus:/data
     depends_on:
       gatus-psql:

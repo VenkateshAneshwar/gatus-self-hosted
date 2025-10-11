@@ -20,6 +20,9 @@ endpoints:
     conditions:
       - "[STATUS] == 200"
       - "[CERTIFICATE_EXPIRATION] > 48h"
+    alerts:
+      - type: telegram
+        send-on-resolved: true
 
   - name: monitoring
     group: internal
@@ -27,13 +30,9 @@ endpoints:
     interval: 10s
     conditions:
       - "[STATUS] == 200"
-
-  - name: nas
-    group: internal
-    url: "https://example.org/"
-    interval: 1m
-    conditions:
-      - "[STATUS] == 200"
+    alerts:
+      - type: telegram
+        send-on-resolved: true
 
   - name: example-dns-query
     url: "8.8.8.8" # Address of the DNS server to use

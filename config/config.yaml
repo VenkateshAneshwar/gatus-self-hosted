@@ -12,6 +12,16 @@ alerting:
 #    username: "john.doe"
 #    password-bcrypt-base64: "JDJhJDEwJHRiMnRFakxWazZLdXBzRERQazB1TE8vckRLY05Yb1hSdnoxWU0yQ1FaYXZRSW1McmladDYu"
 
+# See: https://integrations.goauthentik.io/monitoring/gatus/
+# and [authentik-self-hosted](https://github.com/AiratTop/authentik-self-hosted)
+# security:
+#   oidc:
+#     issuer-url: https://authentik.company/application/o/<application_slug>/
+#     client-id: ${OIDC_CLIENT_ID}
+#     client-secret: ${OIDC_CLIENT_SECRET}
+#     redirect-url: https://gatus.company/authorization-code/callback
+#     scopes: [openid]
+
 endpoints:
   - name: back-end
     group: core

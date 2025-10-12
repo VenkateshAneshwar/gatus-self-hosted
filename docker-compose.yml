@@ -31,6 +31,8 @@ services:
       POSTGRES_PASSWORD: ${PSQL_PWD}
       TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN}
       TELEGRAM_USER_ID: ${TELEGRAM_USER_ID}
+      OIDC_CLIENT_ID: ${OIDC_CLIENT_ID}
+      OIDC_CLIENT_SECRET: ${OIDC_CLIENT_SECRET}
     volumes:
       - ./config/config.yaml:/config/config.yaml:ro
       - ./data/gatus:/data

